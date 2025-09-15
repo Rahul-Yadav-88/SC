@@ -39,6 +39,16 @@ const WorkShowcase = () => {
       image:
         "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1400&auto=format&fit=crop",
     },
+    {
+      title: "ADIDAS",
+      image:
+        "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1400&auto=format&fit=crop",
+    },
+    {
+      title: "ADIDAS",
+      image:
+        "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1400&auto=format&fit=crop",
+    },
   ];
 
   // Duplicate list for seamless marquee
@@ -62,7 +72,7 @@ const WorkShowcase = () => {
                 "linear-gradient(90deg, transparent, black 8%, black 92%, transparent)",
             }}
           >
-            <div className="flex gap-6 px-2 animate-[scrollx_25s_linear_infinite] group-hover:[animation-play-state:paused]">
+            <div className="flex gap-6 px-2 animate-scrollx group-hover:[animation-play-state:paused]">
               {marqueeItems.map((c, i) => (
                 <ShowcaseCard key={i} title={c.title} image={c.image} />
               ))}

@@ -18,7 +18,7 @@ const ContactCTA = () => (
         </button> */}
         <div className="group inline-block">
   <button
-    className="relative overflow-hidden px-18 py-4 bg-[#FF8C42] text-white font-semibold rounded-full shadow-lg flex items-center gap-2 transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-1"
+    className="relative overflow-hidden px-16 py-4 bg-[#FF8C42] text-white font-semibold rounded-full shadow-lg flex items-center gap-2 transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-1"
   >
     {/* Foreground content (icon + text) */}
     <span className="relative z-20 flex items-center gap-2">

@@ -50,7 +50,7 @@ export default function WhyPartner() {
 
   return (
     <div className="flex flex-col items-center justify-center py-16 px-4">
-      <h2 className="text-3xl sm:text-5xl font-bold mb-20 text-center text-[text-[#262626]] ">
+      <h2 className="text-3xl sm:text-5xl font-bold mb-20 text-center text-[#262626]">
         Why Partner With Us?
       </h2>
 
@@ -108,18 +108,18 @@ export default function WhyPartner() {
           );
         })}
 
-        {/* Center Content */}
+        {/* ✅ Center Content aligned with bottom of arc */}
         <motion.div
           key={steps[active].id}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="absolute left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 text-center"
+          className="absolute inset-0 flex flex-col items-center justify-end text-center pb-8"
         >
-          <div className=" flex justify-center w-56">
+          <div className="flex justify-center w-56">
             <img src={steps[active].icon} alt="" />
           </div>
-          <h3 className="text-xl font-semibold">{steps[active].title}</h3>
+          <h3 className="text-xl font-semibold mt-2">{steps[active].title}</h3>
           <p className="text-gray-600">{steps[active].desc}</p>
         </motion.div>
       </div>

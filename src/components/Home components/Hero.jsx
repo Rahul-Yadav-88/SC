@@ -30,7 +30,7 @@ const Hero = ({data}) => (
     <div className="group inline-block">
       <button
         type="submit"
-        className="relative overflow-hidden px-15 py-3 rounded-full text-lg font-medium text-white transform transition duration-500 group-hover:scale-105 group-hover:-translate-y-1 "
+        className="relative overflow-hidden px-12 py-3 rounded-full text-lg font-medium text-white transform transition duration-500 group-hover:scale-105 group-hover:-translate-y-1 "
       >
         <span className="relative z-10">{data.btn1_txt} </span>
         <span className="absolute inset-0 bg-[#FFA559]"></span>
