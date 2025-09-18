@@ -25,7 +25,14 @@ const Footer = () => {
     },
     {
       title: "Contact Info",
-      links: [{ label: "Address" }, { label: "Phone: +91 98765 43210" }, { label: "Email: hello@smallcopper.com" }],
+      links: [
+        {
+          label: "Address: Plot no 14 3rd floor IT Park Chandigarh 160101",
+          href: "https://www.google.com/maps?q=Plot+no+14+3rd+floor+IT+Park+Chandigarh+160101",
+        },
+        { label: "Phone: +91 9056822296", href: "tel:+919056822296" },
+        { label: "Email: hr@smallcooper.com", href: "mailto:hr@smallcooper.com" },
+      ],
     },
   ]
 
@@ -54,11 +61,20 @@ const Footer = () => {
               {section.links.map((link, i) =>
                 link.href ? (
                   <li key={i}>
-                    <NavLink to={link.href}>{link.label}</NavLink>
+                    {/* External links use <a>, internal pages use <NavLink> */}
+                    {link.href.startsWith("http") || link.href.startsWith("tel:") || link.href.startsWith("mailto:") ? (
+                      <a href={link.href} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        {link.label}
+                      </a>
+                    ) : (
+                      <NavLink to={link.href} className="hover:underline">
+                        {link.label}
+                      </NavLink>
+                    )}
                   </li>
                 ) : (
                   <li key={i}>{link.label}</li>
-                ),
+                )
               )}
             </ul>
           </div>
@@ -77,7 +93,7 @@ const Footer = () => {
             <a
               key={i}
               href={link.href}
-              className={`${i !== socialLinks.length - 1 ? "border-r border-gray-500 pr-4" : ""}`}
+              className={`${i !== socialLinks.length - 1 ? "border-r border-gray-500 pr-4" : ""} hover:underline`}
             >
               {link.label}
             </a>
