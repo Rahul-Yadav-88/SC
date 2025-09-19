@@ -7,6 +7,9 @@ import Services from './app/Services/Services'
 import Contact from './app/Contact/Contact'
 import Portfolio from './app/Portfolio/Portfolio'
 import About from './app/About/About'
+import Training from './app/Training/Training'
+import CourseDetails from './app/Training/CourseDetails'
+import Training1 from './app/Training/Training1'
 
 
 
@@ -36,7 +39,17 @@ const router = createBrowserRouter([
         path: "/portfolio",
         element: <Portfolio />
       },
+   
+      {
+        path: "/training",
+        element: <Training />
+      },
+      {
+        path:"/courses/:courseId",
+        element:<CourseDetails/>
 
+      }  
+        
 
     ]
   }
