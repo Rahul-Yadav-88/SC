@@ -10,7 +10,7 @@ const Header = () => {
     { name: "Portfolio", href: "/portfolio" },
     { name: "Training", href: "/training" },
     { name: "Contact Us", href: "/contact" },
- 
+   
   ];
 
   const [isOpen, setIsOpen] = useState(false);

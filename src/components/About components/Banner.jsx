@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Banner() {
@@ -20,12 +21,12 @@ function Banner() {
 
         {/* Buttons */}
         <div className="md:flex md:gap-4   inline-block  space-y-2 md:space-y-0 w-[90%] md:w-[fit-content] space-x-4">
-          <button className="bg-orange-400 hover:bg-orange-500 text-white font-medium py-2 px-6 rounded-full transition">
+          <Link to={'/contact'} className="bg-orange-400 hover:bg-orange-500 text-white font-medium py-2 px-6 rounded-full transition">
             Start Your Project
-          </button>
-          <button className="bg-white hover:bg-gray-100 text-gray-900 font-medium py-2 px-12 rounded-full  transition">
+          </Link>
+          <Link to={'/contact'} className="bg-white hover:bg-gray-100 text-gray-900 font-medium py-2 px-12 rounded-full  transition">
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
     </div>
