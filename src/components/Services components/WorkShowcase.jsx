@@ -1,11 +1,11 @@
 import React, { useMemo } from "react";
 
-const ShowcaseCard = ({ title, image }) => (
+const ShowcaseCard = ({ title, tag, year, image }) => (
   <div className="shrink-0 w-72 sm:w-80 md:w-96 bg-gray-200 rounded-3xl shadow-sm overflow-hidden h-[600px] flex flex-col group cursor-pointer">
     {/* Top tags */}
     <div className="p-4 flex items-center justify-between text-xs text-gray-500">
-      <span className="px-3 py-1 rounded-full border bg-gray-50">Web-Service</span>
-      <span className="px-3 py-1 rounded-full border bg-gray-50">2024</span>
+      <span className="px-3 py-1 rounded-full border bg-gray-50">{tag}</span>
+      <span className="px-3 py-1 rounded-full border bg-gray-50">{year}</span>
     </div>
 
     {/* Title */}
@@ -25,29 +25,39 @@ const ShowcaseCard = ({ title, image }) => (
 const WorkShowcase = () => {
   const cards = [
     {
-      title: "ADIDAS",
+      title: "E-Commerce Platform",
+      tag: "Web Development",
+      year: "2024",
       image:
-        "https://images.unsplash.com/photo-1503342217505-b0a15cf70489?q=80&w=1400&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1581090700227-4c4f50b6a88f?w=1400&auto=format&fit=crop",
     },
     {
-      title: "ADIDAS",
+      title: "Corporate Website",
+      tag: "UI/UX Design",
+      year: "2024",
       image:
-        "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1400&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&auto=format&fit=crop",
     },
     {
-      title: "ADIDAS",
+      title: "SaaS Dashboard",
+      tag: "Cloud Solutions",
+      year: "2024",
       image:
-        "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1400&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=1400&auto=format&fit=crop",
     },
     {
-      title: "ADIDAS",
+      title: "Hotel Booking System",
+      tag: "App Development",
+      year: "2024",
       image:
-        "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1400&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1591696331112-3afc8dba2a26?w=1400&auto=format&fit=crop",
     },
     {
-      title: "ADIDAS",
+      title: "Analytics Dashboard",
+      tag: "Data Engineering",
+      year: "2024",
       image:
-        "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1400&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?w=1400&auto=format&fit=crop",
     },
   ];
 
@@ -74,7 +84,13 @@ const WorkShowcase = () => {
           >
             <div className="flex gap-6 px-2 animate-scrollx group-hover:[animation-play-state:paused]">
               {marqueeItems.map((c, i) => (
-                <ShowcaseCard key={i} title={c.title} image={c.image} />
+                <ShowcaseCard
+                  key={i}
+                  title={c.title}
+                  tag={c.tag}
+                  year={c.year}
+                  image={c.image}
+                />
               ))}
             </div>
           </div>
