@@ -1,13 +1,23 @@
 import React, { useMemo } from "react";
 
 const TrustedBy = () => {
-  const companies = [
-    { name: "IPSUM", logo: "/trust1.png" },
-    { name: "Logoipsum", logo: "/trust2.png" },
-    { name: "Company", logo: "/trust3.png" },
-    { name: "Logoipsum Alt", logo: "/trust4.png" },
-    { name: "Logo", logo: "/trust1.png" },
-  ];
+  const companies = 
+   [
+  { name: "IPSUM", logo: "/trust1.png" },
+  { name: "Logoipsum", logo: "/trust2.png" },
+  { name: "Company", logo: "/trust3.png" },
+  { name: "Logoipsum Alt", logo: "/trust4.png" },
+  { name: "Logo", logo: "/trust1.png" },
+
+  // International-style names
+  { name: "Globex", logo: "/trust2.png" },
+  { name: "Apex Group", logo: "/trust3.png" },
+  { name: "NovaTech", logo: "/trust4.png" },
+  { name: "Atlas Corp", logo: "/trust1.png" },
+  { name: "Zenith Global", logo: "/trust2.png" },
+];
+
+  
 
   const marquee = useMemo(() => [...companies, ...companies], [companies]);
 

@@ -12,11 +12,7 @@ const ContactForm = () => {
       {/* Contact Info */}
       <div className="flex flex-wrap justify-center gap-8 mb-8 text-gray-800 text-lg">
         <div className="flex items-center gap-2">
-<<<<<<< HEAD
-          <PhoneIcon size={20} /> +91 9056322296
-=======
           <PhoneIcon size={20} />+91 9056822296
->>>>>>> d8a3c4ec7a179d27c10249864b9976ea9d778183
         </div>
         <div className="flex items-center gap-2">
           <Mail size={20} /> hr@smallcooper.com
