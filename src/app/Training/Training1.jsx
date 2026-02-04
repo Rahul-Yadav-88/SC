@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../../components/Home components/Hero'
-import { img } from 'framer-motion/client'
+// import { img } from 'framer-motion/client'
 
 const Training1 = () => {
       const heroData={

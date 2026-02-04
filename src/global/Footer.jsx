@@ -27,21 +27,21 @@ const Footer = () => {
       title: "Contact Info",
       links: [
         {
-          label: "Address: Plot no 14 3rd floor IT Park Chandigarh 160101",
-          href: "https://www.google.com/maps?q=Plot+no+14+3rd+floor+IT+Park+Chandigarh+160101",
+          label: "Address: E-304, 6th Floor, GSPL Tower, Mohali, 140307, PB, IN",
+          href: "https://www.google.com/maps/place/GSPL+Tower/@30.6987419,76.6911621,17z/data=!4m6!3m5!1s0x390feffaea0e29d5:0x1fa5fa633af789af!8m2!3d30.6987483!4d76.6911508!16s%2Fg%2F11h2jrt0j7?hl=en&entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D",
         },
-        { label: "Phone: +91 9056822296", href: "tel:+919056822296" },
+        { label: "Phone: +91 9056322296", href: "tel:+91905632296" },
         { label: "Email: hr@smallcooper.com", href: "mailto:hr@smallcooper.com" },
       ],
     },
   ]
 
   const socialLinks = [
-    { label: "LinkedIn", href: "#" },
-    { label: "Twitter", href: "#" },
-    { label: "Instagram", href: "#" },
-    { label: "GitHub", href: "#" },
-    { label: "YouTube", href: "#" },
+    { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61581231893295" },
+    { label: "Google", href: "https://www.google.com/search?q=Small+Copper&stick=H4sIAAAAAAAA_-NgU1I1qDC2NEhLTTMzT7MwNja1MDS2MqiwMEhNNjE0TTRMMTdMTjQ0WcTKE5ybmJOj4JxfUJBaBACgLcogOAAAAA&hl=en&mat=CfVqjw2YaOc5ElcBTVDHntv41XsHavw8iHMjZihd1clogL_oF8TZAqFKxFvVCaiHXhuX_EkV43pQDdSVkbfFgxBUH9P_f7nWsjmUK40StGil9xp3mVbtS9wMKj6eLfe2N6Q&authuser=4" },
+    // { label: "Instagram", href: "#" },
+    // { label: "GitHub", href: "#" },
+    // { label: "YouTube", href: "#" },
   ]
 
   return (

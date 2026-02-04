@@ -5,7 +5,7 @@ import TrustedBy from '../../components/Home components/Trustedby'
 import Stats from '../../components/Home components/Stats'
 import OffersSection from '../../components/Home components/OfferSection'
 import WorkShowcase from '../../components/Services components/WorkShowcase'
-import Testimonials from '../../components/Home components/Testimonials'
+// import Testimonials from '../../components/Home components/Testimonials'
 import ContactCTA from '../../components/Home components/Contact'
 import Hero from '../../components/Home components/Hero'
 
@@ -32,7 +32,7 @@ const Home = () => {
       <OffersSection/>
       <WhyPartner/>
       <WorkShowcase/>
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <ContactCTA/>
     </div>
   )

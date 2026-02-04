@@ -35,7 +35,7 @@ const ContactCTA = () => (
         {/* <button className="px-8 py-4 bg-[#FF8C42] text-white font-semibold rounded-full hover:bg-orange-600 transition-colors shadow-lg flex items-center gap-2">
       
           <Phone/>
-          Call us directly: 08765 43210
+          Call us directly: +91 9056322296
         </button> */}
         <div className="group inline-block">
   <button
@@ -44,7 +44,7 @@ const ContactCTA = () => (
     {/* Foreground Content */}
     <span className="relative z-20 flex items-center gap-2">
       <Phone />
-      Call us directly: 08765 43210
+      Call us directly: +91 9056322296
     </span>
 
     {/* Background Layers */}

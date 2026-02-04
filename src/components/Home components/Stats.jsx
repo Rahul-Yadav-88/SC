@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 const Stats = () => {
   const stats = [
-    { number: 50, label: 'Global Clients' },
+    { number: 10, label: 'Global Clients' },
     { number: 120, label: 'Projects Delivered' },
     { number: 30, label: 'Skilled Professionals' },
     { number: 10, label: 'Industry Experience' }

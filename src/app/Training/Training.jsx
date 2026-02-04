@@ -76,7 +76,7 @@ const Training = () => {
       </section>
 
       {/* Instructors */}
-      <section id="instructors" className="py-16 px-10 bg-white">
+      {/* <section id="instructors" className="py-16 px-10 bg-white">
         <h2 className="text-4xl font-bold text-center mb-12">Our Trainers</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
           {["Arjun Mehta", "Simran Kaur", "Rohan Malhotra", "Kavya Nair"].map((name, i) => (
@@ -91,7 +91,7 @@ const Training = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="text-center py-20 bg-[#FFA559] text-white rounded-[50px]">

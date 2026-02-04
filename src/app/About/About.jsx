@@ -20,7 +20,7 @@ const About = () => {
       <Hero data={heroData}/>
       <Values/>
       <Stats/>
-      <LeadershipTeam/>
+      {/* <LeadershipTeam/> */}
       <WhyPartner/>
       <Banner/>
     </div>
