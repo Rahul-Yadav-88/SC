@@ -10,10 +10,6 @@ import About from './app/About/About'
 import Training from './app/Training/Training'
 import CourseDetails from './app/Training/CourseDetails'
 
-
-
-
-
 const router = createBrowserRouter([
   {
     path: '/',
